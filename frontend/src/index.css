@@ -1,0 +1,17 @@
+
+
+
+
+body {
+  background: url('./Img/bg.png') no-repeat center center fixed;
+  /* Full height */
+  height: 100%;
+
+  background-size: cover;
+  margin: 0;
+}
+
+html, body {
+  font-family: 'Roboto Slab', serif !important;
+  color: white;
+}
