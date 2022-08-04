@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:16
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -11,5 +11,5 @@ COPY . .
 RUN npm install
 
 
-EXPOSE 5000
+EXPOSE 3001
 CMD [ "node", "server.js" ]

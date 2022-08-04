@@ -4,11 +4,11 @@ services:
 
     build: .
     environment:
-      DATABASE_URL: postgres://root:pass@postgres:35432/devsource
+      DATABASE_URL: postgres://root:password@postgres:5432/devsource
     depends_on:
       - postgres
     ports:
-      - "5000:5000"
+      - "3001:3001"
 
   postgres:
     image: postgres:latest
@@ -17,7 +17,8 @@ services:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: devsource
+
     ports: 
-      - "35432:5432"  
+      - "5432:5432"  
 
 
